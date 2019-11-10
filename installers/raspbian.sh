@@ -11,8 +11,8 @@
 # c, --cert, --certficate
 # Installs mkcert and generates an SSL certificate for lighttpd
 
-UPDATE_URL="https://raw.githubusercontent.com/billz/raspap-webgui/master/"
-VERSION=$(curl -s "https://api.github.com/repos/billz/raspap-webgui/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")' )
+UPDATE_URL="https://raw.githubusercontent.com/ifnull/raspap-webgui/master/"
+VERSION=$(curl -s "https://api.github.com/repos/ifnull/raspap-webgui/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")' )
 USAGE=$'Usage: raspbian.sh [OPTION] \n\n-y, --yes, --assume-yes\n\tAssumes "yes" as an answer to all prompts'
 USAGE+=$'\n-c, --cert, --certficate\n\tInstalls an SSL certificate for lighttpd\n'
 
