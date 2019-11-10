@@ -326,7 +326,7 @@ function optimize_php() {
         sudo sed -i -E 's/^session\.cookie_httponly\s*=\s*(0|([O|o]ff)|([F|f]alse)|([N|n]o))\s*$/session.cookie_httponly = 1/' "$phpcgiconf"
     fi
 
-    if [ "$php_package" == "php7.1-cgi" || "$php_package" == "php7.3-cgi" ]; then
+    if [ "$php_package" == "php7.1-cgi" ] || [ "$php_package" == "php7.3-cgi" ]; then
         echo -n "Enable PHP OPCache (Recommended)? [Y/n]: "
         if [ $assume_yes == 0 ]; then
             read answer
